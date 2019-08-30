@@ -1,0 +1,71 @@
+.p1 {
+    color: green;
+    font-size: 20px;
+}
+
+.p2 {
+    text-align: right;
+    font-style: italic;
+}
+
+.p3 {
+
+    text-decoration: line-through;
+}
+
+.p4 {
+    text-indent: 50px;
+    font-weight: bolder;
+}
+
+.p5 {
+    text-transform: uppercase;
+}
+
+.p6 {
+    direction: rtl;
+}
+
+.p7 {
+    unicode-bidi: bidi-override;
+}
+
+.p8 {
+    text-shadow: 5px 3px red;
+}
+
+.p9 {
+    word-spacing: 10px;
+    font-family: sans-serif, "Times New Roman", serif;
+
+}
+
+.p10 {
+    letter-spacing: 5px;
+}
+
+#p11 {
+    font-variant: small-caps;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    background-color: dodgerblue;
+    color: white;
+
+    padding: 10px 25px;
+    border: 1px solid dodgerblue;
+    border-radius: 25px;
+
+
+}
+
+a:visited {}
+
+a:active,
+a:hover {
+    background-color: red;
+    border: 1px solid red;
+
+}

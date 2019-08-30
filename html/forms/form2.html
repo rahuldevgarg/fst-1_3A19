@@ -1,0 +1,61 @@
+<html>
+<body>
+<form>
+  Select your favorite color:
+  <input type="color" name="favcolor">
+    <br>
+    <br>
+  Birthday:
+  <input type="date" name="bday">
+
+    <br>
+    <br>
+
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+<br><br>
+     Birthday (date and time):
+  <input type="datetime-local" name="bdaytime">
+    <br><br>
+     E-mail:
+  <input type="email" name="email" >
+    <br><br>
+     Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="10">
+    <br><br>
+    Search Google: <input type="search" q="googlesearch">
+    <br><br>
+    Enter URL:<input id="myURL" name="myURL" type="url"
+       placeholder="http://www.example.com">
+    <br><br>
+
+    Offering suggested values:
+    <br><br>
+    <input id="myURL" name="myURL" type="url"
+       list="defaultURLs">
+
+<datalist id="defaultURLs">
+  <option value="https://developer.mozilla.org/">
+  <option value="http://www.google.com/">
+  <option value="http://www.microsoft.com/">
+  <option value="https://www.mozilla.org/">
+  <option value="http://w3.org/">
+</datalist>
+
+    <br><br>
+    Using labels for suggested values:<br><br>
+     <input id="myURL" name="myURL" type="url"
+       list="defaultURLs">
+    <datalist id="defaultURLs">
+  <option value="https://developer.mozilla.org/" label="MDN Web Docs">
+  <option value="http://www.google.com/" label="Google">
+  <option value="http://www.microsoft.com/" label="Microsoft">
+  <option value="https://www.mozilla.org/" label="Mozilla">
+  <option value="http://w3.org/" label="W3C">
+</datalist>
+
+</form>
+</body>
+</html>
