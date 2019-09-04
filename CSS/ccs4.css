@@ -1,0 +1,33 @@
+* {
+    font-size: 50px;
+}
+
+.parent {
+    background-color: blue;
+    color: white;
+    height: 50vh;
+
+
+
+}
+
+.child-one {
+    background-color: springgreen;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 0;
+
+}
+
+.child-two {
+    background-color: red;
+    color: white;
+
+}
+
+.child-three {
+    background-color: blueviolet;
+    color: white;
+
+}
