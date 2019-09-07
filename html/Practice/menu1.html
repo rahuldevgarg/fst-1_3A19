@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        .nav {
+            background-color: darkblue;
+            height: 50px;
+            width: 100%
+        }
+
+        .nav ul {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav ul li {
+            background-color: darkblue;
+            height: 50px;
+            float: left;
+            width: 150px;
+
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            line-height: 50px;
+            position: relative;
+        }
+
+        .nav ul li:hover {
+            background-color: #d060ba;
+        }
+
+        .nav ul ul {
+            display: none;
+        }
+
+        .nav ul li:hover>ul {
+            display: block;
+        }
+
+        .nav ul ul ul {
+            margin-left: 150px;
+            top: 0px;
+            position: absolute;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a>
+                <ul>
+                    <li><a href="#">More1</a></li>
+                    <li><a href="#">More2</a></li>
+                    <li><a href="#">More3</a>
+                        <ul>
+                            <li><a href="#">More3.1</a></li>
+                            <li><a href="#">More3.2</a></li>
+                            <li><a href="#">More3.3</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">More4</a></li>
+                    <li><a href="#">More5</a></li>
+                </ul>
+
+            </li>
+
+            <li><a href="#">News</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">feedback</a></li>
+            <li><a href="#">More</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+
+        </ul>
+    </div>
+
+</body></html>
