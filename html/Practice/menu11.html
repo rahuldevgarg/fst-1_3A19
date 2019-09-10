@@ -5,12 +5,170 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <style></style>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-image: url(../../images/office.jpg);
+            background-position: top;
+            background-size: cover;
+
+            font-family: sans-serif;
+            background-repeat: no-repeat;
+
+        }
+
+        .menu-bar {
+            background-color: darkblue;
+            text-align: center;
+
+            position: sticky;
+            top: 0px;
+
+
+
+        }
+
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: white;
+
+        }
+
+        .menu-bar ul li {
+            width: 150px;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .active,
+        .menu-bar ul li:hover {
+            background-color: orchid;
+            border-radius: 3px;
+        }
+
+        .menu-bar .fa {
+            margin-right: 8px;
+        }
+
+        .sub-menu-1 {
+            display: none;
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 {
+            display: block;
+            background-color: darkblue;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: -25px;
+
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 ul {
+            display: block;
+            margin: 10px;
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 ul li {
+            width: 110px;
+            padding: 10px;
+            border-bottom: 1px dotted white;
+            text-align: left;
+            background: transparent;
+            border-radius: 0px;
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 ul li:hover {
+            color: darkgrey;
+        }
+
+        .fa-angle-right {
+            float: right;
+        }
+
+        .sub-menu-2 {
+            display: none;
+        }
+
+        .hover-me:hover .sub-menu-2 {
+            display: block;
+            position: absolute;
+            margin-left: 100px;
+            margin-top: -40px;
+
+
+            background-color: darkblue;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#"><i class="fa fa-home"></i>
+                    Home</a></li>
+            <li><a href="#"><i class="fa fa-home"></i>About us</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li>Serive-1</li>
+                        <li class="hover-me"><i class="fa fa-angle-right"></i>Serive-2
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li>menu-2</li>
+                                    <li>menu-2</li>
+                                    <li>menu-2</li>
+                                </ul>
+                            </div>
 
-</body>
+                        </li>
+                        <li><i class="fa fa-angle-right"></i>Serive-3</li>
+                    </ul>
 
-</html>
+                </div>
+
+            </li>
+            <li><a href="#">Services</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li>Serive-1</li>
+                        <li class="hover-me"><i class="fa fa-angle-right"></i>Serive-2
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li>menu-2</li>
+                                    <li>menu-2</li>
+                                    <li>menu-2</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>Serive-3</li>
+                    </ul>
+
+                </div>
+
+            </li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">pricing</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</body></html>

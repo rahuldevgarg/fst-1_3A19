@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title></title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("../../images/photo-3.jpg") no-repeat;
+            background-position: top;
+            background-size:cover;
+        }
+
+        .nav-bar {
+            background-color: darkblue;
+            text-align: center;
+
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        .nav-bar ul li {
+            width: 150px;
+            padding: 15px;
+            margin: 15px;
+        }
+
+        .nav-bar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .active,
+        .nav-bar ul li:hover {
+            background-color: palevioletred;
+            border-radius: 3px;
+        }
+
+        .fa {
+            margin-right: 8px;
+        }
+
+        .sub-menu-1 {
+            display: none;
+
+
+        }
+
+        .nav-bar ul li:hover .sub-menu-1 {
+            background-color: darkblue;
+            display: block;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: -25px;
+        }
+
+        .nav-bar ul li:hover .sub-menu-1 ul {
+            display: block;
+        }
+
+        .nav-bar ul li:hover .sub-menu-1 ul li {
+            width: 150px;
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px dotted white;
+            background: transparent;
+            border-radius: 0px;
+        }
+
+        .nav-bar ul li:hover .sub-menu-1 ul li:last-child {
+            border-bottom: none;
+        }
+
+        .nav-bar ul li:hover .sub-menu-1 ul li a:hover {
+            color: darkgrey;
+        }
+
+        .fa-angle-right {
+            float: right;
+        }
+
+        .sub-menu-2 {
+            display: none;
+
+        }
+
+        .hover-me:hover .sub-menu-2 {
+            background-color: darkblue;
+            display: block;
+            position: absolute;
+            margin-top: -54px;
+            margin-left: 140px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li class="active"><a href=""><i class="fa fa-home"></i>Home</a></li>
+            <li><a href=""><i class="fa fa-user-circle"></i>About</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="">About us </a></li>
+                        <li><a href="">Mission</a></li>
+                        <li><a href="">vision</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href=""><i class="fa fa-handshake-o"></i>Services</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="">Web Designing </a></li>
+                        <li class="hover-me"><a href="">Marketting<i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="">SEO</a></li>
+                                    <li><a href="">Social-Media</a></li>
+                                    <li><a href="">Email-Marketting</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="">Mobile <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="">Android App</a></li>
+                                    <li><a href="">Iphoen App</a></li>
+                                    <li><a href="">Ionic App</a></li>
+                                    <li><a href="">Unity App</a></li>
+                                    <li><a href="">Fliter App</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </li>
+            <li><a href=""><i class="fa fa-briefcase"></i>clients</a></li>
+            <li><a href=""><i class="fa fa-american-sign-language-interpreting"></i>investers</a></li>
+            <li><a href=""><i class="fa fa-tags"></i>Pricing</a></li>
+            <li><a href=""><i class="fa fa-tasks"></i>Training</a></li>
+            <li><a href=""><i class="fa fa-address-book"></i>Contact</a></li>
+        </ul>
+    </div>
+</body></html>
