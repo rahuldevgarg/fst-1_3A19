@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .main {
+
+            height: 90px;
+            width: 90px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid;
+            border-radius: 30%;
+            box-shadow: 0 5px 15px -5px #00000070;
+
+        }
+
+        .main::before {
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: #3498db;
+            transform: rotate(45deg);
+            left: -110%;
+            top: 90%;
+        }
+
+        .main:hover::before {
+            animation: aaa 7s 1;
+            top: -10%;
+            left: -10%;
+        }
+
+        @keyframes aaa {
+            0% {
+                left: -110%;
+                top: 90%;
+            }
+
+            50% {
+                left: 10%;
+                top: -30%;
+            }
+
+            100% {
+                top: -10%;
+                left: -10%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+
+    </div>
+</body>
+
+</html>
