@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        onload = start;
+
+        function start() {
+            var i = 1;
+
+            function Move() {
+                i = (i % 5) + 1; // 5 is the Number of image in slider
+                document.getElementById('id' + i).checked = true;
+            }
+            setInterval(Move, 2000); //change img in 3 sec
+        }
+
+    </script>
 
 
     <style>
@@ -85,6 +100,54 @@
             color: white;
             transition: .3s;
         }
+
+        .nav-slider {
+            width: 100%;
+            bottom: 12%;
+            height: 12px;
+            position: absolute;
+            text-align: center;
+            z-index: 99;
+            cursor: default;
+        }
+
+        .nav-slider .dots {
+            width: 18px;
+            height: 18px;
+            margin: 0 5px;
+            position: relative;
+            border-radius: 100%;
+            display: inline-block;
+            background: rgba(0, 0, 0, .5);
+            transition: .5s;
+        }
+
+        .nav-slider .dots:hover {
+            background: rgba(255, 255, 255, .9);
+            cursor: pointer;
+            transition: .25s;
+        }
+
+        .img_slide {
+            z-index: -1;
+        }
+
+        #id1:checked~#one,
+        #id2:checked~#two,
+        #id3:checked~#three,
+        #id4:checked~#four,
+        #id5:checked~#five {
+            z-index: 9;
+        }
+
+        #id1:checked~.nav-slider dot-1,
+        #id2:checked~.nav-slider dot-2,
+        #id3:checked~.nav-slider dot-3,
+        #id4:checked~.nav-slider dot-4,
+        #id5:checked~.nav-slider dot-5 {
+            z-index: 9;
+        }
+
     </style>
 </head>
 
@@ -173,6 +236,6 @@
 
 
 
-    </div>
+</body>
 
-</body></html>
+</html>
