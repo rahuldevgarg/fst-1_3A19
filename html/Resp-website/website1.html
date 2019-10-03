@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-family: arial;
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+        }
+
+        header {
+            /*            position: fixed;*/
+            /*            width: 100%;*/
+            background-color: #537153;
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        header a {
+            color: white;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+        }
+
+        #logo {
+            margin: 0 auto;
+            font-size: 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #menu ul {
+            margin-left: 20px;
+        }
+
+        #menu li {
+            padding: 10px;
+
+        }
+
+        #social-link ul {
+            margin-right: 20px;
+        }
+
+        #social-link li {
+            padding: 10px;
+        }
+
+        .services-container {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-box {
+            border: 1px solid #eee;
+            padding: 10px;
+            flex-basis: 32%;
+            max-width: 370px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .service-box img {
+            width: 100%;
+            max-height: 180px;
+        }
+
+        .main {
+            /*            margin-top: 60px;*/
+            display: flex;
+
+        }
+
+        aside {
+            flex: 0 0 20vw;
+            background-color: beige;
+            padding: 10px;
+        }
+
+        aside img {
+            width: 100%;
+            /*            height: 62%;*/
+            margin-top: 10px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0px;
+            text-align: center;
+        }
+
+        aside ul a {
+            color: #537153;
+            padding: 10px;
+            display: block;
+            border-bottom: 1px solid #537153;
+
+
+        }
+
+        artical {
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #537153;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px
+        }
+
+        .call-to-action {
+            margin-top: 5px;
+            align-self: flex-start;
+            margin-top: auto;
+        }
+
+        .call-to-action a {
+            text-decoration: none;
+            background-color: grey;
+            color: white;
+            padding: 8px 13px;
+        }
+
+        .call-to-action a:hover {
+            background: transparent;
+            color: grey;
+            border: 1px solid grey;
+        }
+
+
+        @media screen and (max-width:850px) {
+            aside {
+                flex: 0 0 30vw;
+            }
+
+            .service-box {
+                border: 1px solid #eee;
+                padding: 10px;
+                flex-basis: 48%;
+
+
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            header {
+                flex-direction: column;
+
+            }
+
+            #logo {
+                order: -1;
+            }
+
+            artical {
+                order: -1
+            }
+
+            .main {
+
+                flex-direction: column;
+            }
+
+            .services-container {
+                flex-direction: column;
+            }
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <a href="">Pnakkap</a>
+
+        </div>
+        <nav id="social-link">
+            <ul>
+                <li><a href=""><i class="fab fa-facebook"></i></a>
+
+                </li>
+                <li><a href=""><i class="fab fa-twitter"></i></a>
+
+                </li>
+                <li><a href=""><i class="fab fa-google"></i></a>
+
+                </li>
+            </ul>
+
+
+        </nav>
+
+
+
+    </header>
+    <div class="main">
+        <aside>
+            <ul>
+                <li>
+                    <a href="">some text</a>
+                </li>
+                <li>
+                    <a href="">some text</a>
+                </li>
+                <li>
+                    <a href="">some text</a>
+                </li>
+                <li>
+                    <a href="">some text</a>
+                </li>
+                <li>
+                    <a href="">some text</a>
+                </li>
+
+
+            </ul>
+            <img src="../../images/office/img-5.jpg" alt="">
+
+        </aside>
+        <artical>
+            <h2 style=" margin: 10px 0;">Welcome to our Website</h2>
+            <p style=" text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum error tempore, doloremque et, fuga iste dolorum fugiat sequi, eos odit, ab hic eius laboriosam illo neque modi id dolores architecto temporibus placeat beatae facere. Quam minus nemo ad illo saepe dolor dignissimos nisi earum mollitia possimus! Ut iusto nulla, fugit vitae repudiandae quod rerum voluptatum saepe quas sit, reiciendis tempore explicabo sed, similique! Fugiat cum ullam molestias aliquam qui nihil in inventore accusantium totam, dolore suscipit laboriosam, quidem tenetur fuga quam incidunt. Neque omnis minus impedit consequuntur dolores accusamus consectetur nisi magnam aspernatur officiis, nesciunt totam facilis quis perspiciatis molestiae.</p>
+            <h2 style="margin: 10px 0;">our services</h2>
+
+            <div class="services-container">
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="../../images/office/img-1.jpg" alt="" style="min-height: 180px;">
+                    </div>
+                    <div class="service-title">
+                        <h3 style="margin: 10px 0;">Web designing</h3>
+
+                    </div>
+                    <div class="service-desc">
+                        <p style="margin-bottom: 10px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora esse cupiditate suscipit illum. </p>
+                    </div>
+                    <div class="call-to-action">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+
+
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="../../images/office/img-2.jpg" alt="">
+                    </div>
+                    <div class="service-title">
+                        <h3 style="margin: 10px 0;">Web Development</h3>
+
+                    </div>
+                    <div class="service-desc">
+                        <p style="margin-bottom: 10px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, libero.</p>
+                    </div>
+                    <div class="call-to-action">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+
+
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="../../images/office/img-3.jpg"" alt=">
+                    </div>
+                    <div class="service-title">
+                        <h3 style="margin: 10px 0;">Mobile App Deevelopment</h3>
+
+                    </div>
+                    <div class="service-desc">
+                        <p style="margin-bottom: 10px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, libero.</p>
+                    </div>
+                    <div class="call-to-action">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </artical>
+    </div>
+    <footer>
+        &copy; Made By: Pankaj Kapoor
+    </footer>
+</body>
+
+</html>
