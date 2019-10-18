@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <style>
         * {
@@ -12,43 +12,38 @@
             margin: 0px;
             font-family: sans-serif;
             font-size: 20px;
-
             box-sizing: border-box;
-
         }
 
         body {
-            background-image: url("../../images/P1.jpg");
-            background-repeat: no-repeat;
+            background: url("../../images/photo-3.jpg") no-repeat;
             background-size: cover;
-
-
         }
 
-        .mainmenu {
+        .navbar {
             background-color: darkblue;
             text-align: center;
         }
 
-        .mainmenu ul {
+        .navbar ul {
             list-style: none;
             display: inline-flex;
+
         }
 
-        .mainmenu ul li {
+        .navbar ul li {
             width: 150px;
-            padding: 15px;
             margin: 15px;
-
+            padding: 15px;
         }
 
-        .mainmenu ul li a {
+        .navbar ul li a {
             text-decoration: none;
             color: white;
         }
 
         .active,
-        .mainmenu ul li:hover {
+        .navbar ul li:hover {
             background-color: deeppink;
             border-radius: 5px;
         }
@@ -57,13 +52,12 @@
             margin-right: 8px;
         }
 
-        .submenu1 {
+
+        .submenu-1 {
             display: none;
-
-
         }
 
-        .mainmenu ul li:hover .submenu1 {
+        .navbar ul li:hover .submenu-1 {
             background-color: darkblue;
             display: block;
             position: absolute;
@@ -71,11 +65,12 @@
             margin-left: -25px;
         }
 
-        .mainmenu ul li:hover .submenu1 ul {
+
+        .navbar ul li:hover .submenu-1 ul {
             display: block;
         }
 
-        .mainmenu ul li:hover .submenu1 ul li {
+        .navbar ul li:hover .submenu-1 ul li {
             width: 150px;
             padding: 15px;
             text-align: left;
@@ -84,103 +79,80 @@
             border-bottom: 1px dotted white;
         }
 
-
-        .mainmenu ul li:hover .submenu1 ul li:last-child {
+        .navbar ul li:hover .submenu-1 ul li:last-child {
             border-bottom: none;
         }
 
-        .mainmenu ul li:hover .submenu1 ul li a:hover {
+        .navbar ul li:hover .submenu-1 ul li a:hover {
             color: lightpink;
         }
 
         .fa-angle-right {
             float: right;
         }
-
-        .submenu2 {
+        .submenu-2
+        {
             display: none;
         }
-
-        .hoverme:hover .submenu2 {
+        .hover-me:hover .submenu-2
+        {
             display: block;
-            position: absolute;
             background-color: darkblue;
-            margin-top: -55px;
+            position: absolute;
             margin-left: 135px;
+            margin-top: -55px;
         }
+
+
     </style>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="mainmenu">
+    <div class="navbar">
         <ul>
-            <li class="active"><a href=""><i class="fa fa-home" aria-hidden="true"></i>
-                    Home</a></li>
-            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>About</a>
-                <div class="submenu1">
-
-                    <ul class="left">
-                        <li><a href="">About</a></li>
-                        <li><a href="">mission</a></li>
-                        <li><a href="">vision</a></li>
-                    </ul>
-
-
-                </div>
-
-            </li>
-            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>services</a>
-                <div class="submenu1">
-
+            <li class="active"><a href=""><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="">About</a>
+                <div class="submenu-1">
                     <ul>
-                        <li><a href="">Development</a></li>
-                        <li class="hoverme"><a href="">Marketing <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                            <div class="submenu2">
-
+                        <li><a href="">Who we r</a></li>
+                        <li><a href="">Mission</a></li>
+                        <li><a href="">Vision</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">services</a>
+                <div class="submenu-1">
+                    <ul>
+                        <li><a href="">Web Designing</a></li>
+                        <li class="hover-me"><a href="">Marketing<i class="fa fa-angle-right"></i></a>
+                            <div class="submenu-2">
                                 <ul>
                                     <li><a href="">SEO</a></li>
                                     <li><a href="">Social Media</a></li>
                                     <li><a href="">E-Marketing</a></li>
                                 </ul>
-
-
                             </div>
 
-
-
-
                         </li>
-                        <li class="hoverme"><a href="">Mobile<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-
-                            <div class="submenu2">
-
+                        <li class="hover-me"><a href="">Mobile<i class="fa fa-angle-right"></i></a>
+                            <div class="submenu-2">
                                 <ul>
                                     <li><a href="">Android App</a></li>
                                     <li><a href="">Iphone App</a></li>
                                     <li><a href="">Game App</a></li>
-                                    <li><a href="">Fiter App</a></li>
+                                    <li><a href="">Unity App</a></li>
                                 </ul>
-
-
                             </div>
 
                         </li>
                     </ul>
-
-
                 </div>
-
-
-
             </li>
-            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>clients</a></li>
-            <li><a href="">invester</a></li>
-            <li><a href="">pricing</a></li>
-            <li><a href="">training</a></li>
-            <li><a href="">contact</a></li>
+            <li><a href="">clients</a></li>
+            <li><a href="">Investers</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Training</a></li>
+            <li><a href="">Contact </a></li>
         </ul>
-
-
     </div>
 </body></html>
